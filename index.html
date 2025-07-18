@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension Image Resizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chrome Extension Image Resizer</h1>
+        <p>Select an image or drag and drop to generate the required icon sizes for a Chrome extension.</p>
+        <div id="dropZone" class="drop-zone">
+            <div class="drop-zone-content">
+                <p>Drag and drop an image here or</p>
+                <input type="file" id="imageInput" accept="image/*">
+                <label for="imageInput" class="file-label">Choose File</label>
+            </div>
+        </div>
+        <button id="resizeBtn">Generate Icons</button>
+        <div id="output" style="display: none;">
+            <h2>Resized Icons</h2>
+            <div id="download-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
